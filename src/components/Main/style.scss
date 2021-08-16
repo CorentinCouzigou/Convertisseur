@@ -1,0 +1,33 @@
+
+.main {
+  color: #bb5432;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  overflow: auto;
+  &__search {
+    font-weight: 700;
+    padding:1rem;
+    font-size: 1.2rem;
+    border:none;
+    color:#f1c5b6;
+    &::placeholder{
+      color:#f1c5b6;
+    }
+  }
+  &__currencies {
+    font-weight: 500; 
+    padding:1rem;
+    border-bottom: 1px solid #f1c5b6;
+  }
+  &__li{
+    font-weight: 500; 
+    padding:1rem;
+    border-bottom: 1px solid #f1c5b6;
+    transition:all 1s ease-out;
+  }
+  &__li:hover {
+    background-color:  rgba(187, 84, 50, 0.2);
+    transition:all 0.2s ease-out;
+  }
+}

@@ -1,0 +1,17 @@
+.containerButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.button{
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color:  #bb5432;
+  color: white;
+  padding: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  
+}

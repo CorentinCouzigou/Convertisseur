@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #bb5432;
+  height: 25%;
+
+  &__result {
+    font-weight: 700;
+    font-size:2rem;
+    margin-bottom:1rem;
+  }
+  &__deviceName {
+    font-size: 2rem;
+    font-weight: 300;    
+  }
+}

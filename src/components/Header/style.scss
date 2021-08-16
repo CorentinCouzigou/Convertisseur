@@ -1,0 +1,38 @@
+.header {
+  background-color: #bb5432 ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 25%;
+
+    &__title {
+      font-weight: 700;
+      font-size:2rem;
+      margin-bottom:1rem;
+    }
+    &__amount {
+      font-weight: 300;    
+    }
+    &__input{
+      border:none;
+      padding:0.2rem;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 2rem;
+      margin: 0px 10px;
+    }
+    &__button {
+      border:2px solid white;
+      border-radius: 2rem;
+      color: white;
+      background-color:#bb5432;
+      transition: all 0.4s ease-in-out;
+     &:hover{
+      background-color: white ;
+      
+      color:#bb5432;
+     }
+    }
+}
