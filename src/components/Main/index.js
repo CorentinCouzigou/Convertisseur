@@ -38,7 +38,6 @@ Main.propTypes = {
   currencie: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
   })).isRequired,
-  onClick: PropTypes.func.isRequired,
   search: PropTypes.func.isRequired,
   changeCurrency: PropTypes.func.isRequired,
 };
