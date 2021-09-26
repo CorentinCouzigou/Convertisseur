@@ -5,11 +5,18 @@ import './style.scss';
 
 function Main({
   currencie,
-  onClick,
   search,
   changeCurrency,
 }) {
-  const listCurrencies = currencie.map((element) => (<li key={element.name} name={element.name} className="main__li" onClick={() => changeCurrency(element.name)}> {element.name}</li>));
+  const listCurrencies = currencie.map((element) => (
+    <li
+      key={element.name}
+      name={element.name}
+      className="main__li"
+      onClick={() => changeCurrency(element.name)}
+    > {element.name}
+    </li>
+  ));
 
   const handleOnChange = (event) => {
     search(event.target.value);
