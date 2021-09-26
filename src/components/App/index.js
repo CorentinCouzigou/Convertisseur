@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable react/destructuring-assignment */
 import React, { useState } from 'react';
 import Header from '../Header';
 import Main from '../Main';
@@ -22,6 +24,10 @@ export default class App extends React.Component {
     this.setState({
       baseAmount: parseFloat(value, 10),
     });
+  };
+
+  setCurrency = (value) => {
+    this.setState({ currency: value });
   };
 
   setSearch = (value) => {
@@ -68,7 +74,7 @@ export default class App extends React.Component {
       <div className="app">
         <Header baseAmount={this.state.baseAmount} setBaseAmount={this.setBaseAmount} />
         <Toggler text="Show currencies" onClickButton={this.setOpen} />
-        {this.state.open && <Main currencie={this.getFilterCurrencies()} onClick={this.selectCurrencie} search={this.setSearch} />}
+        {this.state.open && <Main currencie={this.getFilterCurrencies()} onClick={this.selectCurrencie} search={this.setSearch} changeCurrency={this.setCurrency} />}
         <Footer currency={this.state.currency} value={value} />
       </div>
     );
