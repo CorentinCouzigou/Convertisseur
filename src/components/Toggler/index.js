@@ -2,27 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
 
-function Toggler ({text, onClickButton}) {
+function Toggler({ text, onClickButton }) {
   const handleOnClick = () => {
     onClickButton();
-  }
+  };
 
   return (
     <div className="containerButton">
-<button 
-className="button" 
-onClick={handleOnClick}
->
-=
-</button>
-</div>
-  )
+      <button
+        className="button"
+        onClick={handleOnClick}
+      />
+    </div>
+  );
 }
 
 Toggler.propTypes = {
-  text:PropTypes.string.isRequired,
-  onClickButton:PropTypes.func.isRequired,
-}
-
+  text: PropTypes.string.isRequired,
+  onClickButton: PropTypes.func.isRequired,
+};
 
 export default Toggler;
