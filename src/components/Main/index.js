@@ -24,7 +24,12 @@ function Main({
 
   return (
     <main className="main">
-      <input type="text" placeholder="Search for a currency" className="main__search" onChange={handleOnChange} />
+      <input
+        type="text"
+        placeholder="Search for a currency"
+        className="main__search"
+        onChange={handleOnChange}
+      />
       <ul
         className="main__listCurrencies"
       >
