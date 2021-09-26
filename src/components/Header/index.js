@@ -12,7 +12,14 @@ function Header({ setBaseAmount }) {
     <header className="header">
       <h1 className="header__title">Converter</h1>
       <label>Amount in euro:
-        <input type="number" className="header__input" min={0} step="0.01" name="userValue" onChange={handleBaseAmount} />
+        <input
+          type="number"
+          className="header__input"
+          min={0}
+          step="0.01"
+          name="userValue"
+          onChange={handleBaseAmount}
+        />
       </label>
     </header>
   );
