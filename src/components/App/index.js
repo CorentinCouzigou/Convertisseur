@@ -14,7 +14,7 @@ export default class App extends React.Component {
     baseAmount: 0,
     currency: 'United States Dollar',
     search: '',
-  };
+  }
 
   setOpen = () => {
     this.state.open ? this.setState({ open: false }) : this.setState({ open: true });

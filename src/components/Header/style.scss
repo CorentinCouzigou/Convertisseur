@@ -12,9 +12,6 @@
       font-size:2rem;
       margin-bottom:1rem;
     }
-    &__amount {
-      font-weight: 300;    
-    }
     &__input{
       border:none;
       padding:0.2rem;
@@ -35,4 +32,16 @@
       color:#bb5432;
      }
     }
+}
+@media screen and (max-width:768px) {
+  .header__input{
+    width:55vw;
+  }
+  .header__title{
+    font-size:1.4rem;
+  }
+  .header__amount{
+    font-size:0.8rem;
+  }
+  
 }
